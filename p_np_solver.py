@@ -5,8 +5,10 @@ def p_np_solver():
     np = n * p
     while (p != np):
         p += 1
+        np = n * p
         while (p != np):
             n += 1
+            np = n * p
     # the loop will end if we have found the solution to p vs np
     return (n, p)
 
